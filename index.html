@@ -1,3 +1,12 @@
+<h1>Hello World</h1>
+
+<form id="form">
+  <label>Test field: <input type="text"></label>
+  <br><br>
+  <button type="submit">Submit form</button>
+</form>
+<p id="log"></p>
+
 <script>
   function logSubmit(event) {
   log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
@@ -8,11 +17,3 @@
   const log = document.getElementById('log');
   form.addEventListener('submit', logSubmit);
 </script>
-<h1>Hello World</h1>
-
-<form id="form">
-  <label>Test field: <input type="text"></label>
-  <br><br>
-  <button type="submit">Submit form</button>
-</form>
-<p id="log"></p>
