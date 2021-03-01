@@ -1,10 +1,15 @@
 <script>
+  form.addEventListener('submit', getXML);
   
+  function getXML(event) {
+    log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
+  }
     
 </script>
 <h1>Hello World</h1>
 
-<FORM>
+<form id="form">
 <INPUT TYPE="text" ID="InputValue">
-<INPUT TYPE="submit" VALUE="Calculate">
-</FORM>
+<INPUT TYPE="submit" VALUE="Get XML">
+</form>
+ <p id="log"></p>
